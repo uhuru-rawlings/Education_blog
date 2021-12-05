@@ -1,0 +1,128 @@
+/* header */
+nav{
+    background-color:steelblue;
+    color: #FFFFFF;
+    text-align: right;
+    padding:10px 50px 10px 10px;
+    margin: -8px -8px 0px -8px;
+    position: absolute;
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+}
+nav img{
+    display: none;
+}
+ul li{
+    list-style: none;
+    display: inline;
+    padding-left: 30px;
+    margin: 0;
+}
+ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: normal;
+}
+ul li a:hover{
+  border-bottom: 2px solid orangered;
+}
+/* footer */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: steelblue;
+    padding-bottom: 10px;
+    margin: 0px -8px -8px -8px;
+    position: absolute;
+    /* bottom: 0; */
+    width: 100%;
+}
+footer .rows a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+footer .rows p{
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: normal;
+}
+footer input[type=email]{
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+}
+footer input[type=submit]{
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+    background-color: rgb(0,0,0);
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: normal;
+}
+@media only screen and (max-width:480) {
+    *{
+        font-size: 14px;
+        margin: 0;
+    }
+    #listings{
+        display: none;
+    }nav{
+        position: absolute;
+        width: 100%;
+        position: relative;
+        top: 0;
+    }
+    nav img{
+        display: block;
+    }
+    nav img:hover #listings{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        font-size: 14px;
+    }
+    footer{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:768){
+    *{
+        font-size: 17px;
+        margin: 0;
+    }
+    #listings{
+        display: none;
+    }nav{
+        position: absolute;
+        width: 100%;
+        top: 0;
+    }
+    nav img{
+        display: block;
+    }
+    nav img:hover #listings{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        font-size: 17px;
+    }
+    footer{
+        display: block;
+        text-align: center;
+        justify-content: unset;
+    }
+    footer .rows{
+        width: 100%;
+    }
+}

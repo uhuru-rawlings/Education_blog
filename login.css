@@ -1,0 +1,76 @@
+*{
+    font-size: 17px;
+    font-weight: normal;
+    font-family: monospace;
+}
+label{
+    color: steelblue;
+}
+::placeholder{
+    color: rgb(161, 172, 182);
+}
+input[type=email],input[type=number],input[type=text],input[type=password]{
+    width: 500px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid steelblue;
+}
+fieldset{
+    border: 2px solid steelblue;
+    border-radius: 10px;
+    width: 530px;
+    margin-left: 30%;
+    position: relative;
+    top: 30px;
+}
+input[type=submit]{
+    background-color: steelblue;
+    color: #FFFFFF;
+    font-size: 22px;
+    border: none;
+    width: 500px;
+    height: 50px;
+    border-radius: 7px;
+}
+input{
+    outline: none;
+}
+@media only screen and (max-width:450px){
+    *{
+        font-size: 17px;
+        font-weight: normal;
+        font-family: monospace;
+    }
+    label{
+        color: steelblue;
+    }
+    ::placeholder{
+        color: rgb(161, 172, 182);
+    }
+    input[type=email],input[type=number],input[type=text],input[type=password]{
+        width: 100%;
+        height: 45px;
+        border-radius: 5px;
+        border: 1px solid steelblue;
+    }
+    fieldset{
+        border: 2px solid steelblue;
+        border-radius: 10px;
+        width: 100%;
+        margin-left: none;
+        position: relative;
+        top: 30px;
+    }
+    input[type=submit]{
+        background-color: steelblue;
+        color: #FFFFFF;
+        font-size: 22px;
+        border: none;
+        width: 100%;
+        height: 50px;
+        border-radius: 7px;
+    }
+    input{
+        outline: none;
+    }
+}
